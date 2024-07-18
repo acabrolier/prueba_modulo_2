@@ -91,7 +91,7 @@
     <!--inicio main-->
     <main>
         <!--inicio QUIENES SOMOS-->
-        <section class="container-fluid bg-black py-4 px-5 mx-auto text-light d-none d-md-block fs-6 fw-light">
+        <section id="quienessomos" class="container-fluid bg-black py-4 px-5 mx-auto text-light d-none d-md-block fs-6 fw-light">
             <h3 class="text-center fw-light">¿QUIÉNES SOMOS?</h3>
             <hr class="border border-light border-1 opacity-25">
             <div class="row mx-2">
@@ -142,7 +142,7 @@
         </section>
         <!--fin QUIENES SOMOS-->
         <!--inicio DESTACADOS-->
-        <section class="container-fluid bg-black text-light fs-6 fw-light">
+        <section id="destacados" class="container-fluid bg-black text-light fs-6 fw-light">
             <div class="row justify-content-center mx-4">
                 <h3 class="text-center fw-light text-light py-2">DESTACADOS</h3>
                 <hr class="border border-light border-1 opacity-25">
@@ -191,18 +191,18 @@
         </section>
         <!--fin DESTACADOS-->
         <!--inicio CONTACTO-->
-        <section class="container-fluid bg-black py-4 px-5 mx-auto fw-light">
+        <section id="contacto" class="container-fluid bg-black py-4 px-5 mx-auto fw-light">
             <div class="row">
                 <div class="col-12 d-block">
                     <h3 class="fw-light text-light text-center">CONTACTO</h3>
                     <hr class="border border-light border-1 opacity-25">
                     <div class="mb-3 text-light px-3">
                         <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre">
+                        <input type="text" class="form-control" id="nombre" required>
                     </div>
                     <div class="mb-3 text-light px-3">
                         <label for="asunto" class="form-label">Asunto</label>
-                        <input type="text" class="form-control" id="asunto">
+                        <input type="text" class="form-control" id="asunto" required>
                     </div>
                     <div class="mb-3 text-light px-3">
                         <label for="mensaje" class="form-label">Mensaje</label>
@@ -226,17 +226,17 @@
                 <div class="card-footer border-0">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link text-light fa-2x" href="#"><i class="fa-brands fa-square-github"></i></a>
+                            <a class="nav-link text-light fa-2x" href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fa-2x" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a class="nav-link text-light fa-2x" href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fa-2x" href="#"><i
+                            <a class="nav-link text-light fa-2x" href="https://twitter.com/" target="_blank"><i
                                     class="fa-brands fa-square-twitter"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light fa-2x" href="#"><i
+                            <a class="nav-link text-light fa-2x" href="https://facebook.com/" target="_blank"><i
                                     class="fa-brands fa-square-facebook"></i></a>
                         </li>
                     </ul>

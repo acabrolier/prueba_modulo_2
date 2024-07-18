@@ -7,3 +7,4 @@ $('#button02').on('click', function () {
 $('#button03').on('click', function () {
     $('#seccion03').slideToggle(1000);
 })
+
