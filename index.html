@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Javier Arriagada">
+    <meta name="author" content="Antonella Cabrolier">
     <meta name="description" content="html, css, JavaScript, Jquery">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
 
 <body class="font">
     <!--inicio nav-->
-    <nav class="navbar navbar-expand-lg bg-transparent sticky-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand text-dark d-flex " href="index.html">
                 <img class="logo" src="assets/img/viajes.svg" alt="logo">
@@ -60,9 +60,9 @@
     <!--fin nav-->
 
     <!--inicio carrousel-->
-    <section>
+    <section class="container-fluid">
         <header>
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselfondo" class="carousel slide" data-bs-ride="carousel">
                 <!-- bata-bs-ride hace que el carrousel sea automatico-->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -99,9 +99,11 @@
             <div class="row mx-2">
                 <div class="col-12 col-md-4 fs-6">
                     <a class="nav-link text-light bg-info text-center">
-                        <button id="button01" class="btn btn-outline-info text-light bg-info text-center" type="button"> <i class="fa-solid fa-plane fa-2x"></i></button>
+                        <button id="button01" class="btn btn-outline-info text-light bg-info text-center" type="button">
+                            <i class="fa-solid fa-plane fa-2x"></i></button>
                     </a>
-                    <p id="seccion01">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore minus, voluptate repellat eum
+                    <p id="seccion01">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore minus, voluptate
+                        repellat eum
                         eligendi quod magnam dolor ducimus nulla totam veritatis blanditiis, vitae quo saepe velit harum
                         maiores, aspernatur tenetur eaque? Expedita repellendus rerum, totam fugit iure eveniet, illum
                         assumenda nostrum asperiores doloribus ipsam. Esse earum corrupti aliquid dolorem, illum
@@ -110,7 +112,8 @@
                         perspiciatis beatae?</p>
                 </div>
                 <div class="col-12 col-md-4">
-                    <p id="seccion02">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nihil quidem, qui minus quaerat
+                    <p id="seccion02">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nihil quidem, qui
+                        minus quaerat
                         adipisci maxime quos, sit aliquam quo et aliquid. Quia in obcaecati inventore tempora et
                         perferendis corrupti nulla, at atque mollitia expedita quaerat, illo nisi dolorem totam iste
                         repellendus exercitationem id velit, deserunt provident similique optio ut! Non ut eius
@@ -118,14 +121,17 @@
                         asperiores, cumque veniam praesentium corporis repellat omnis, aperiam maxime ducimus. Debitis!
                     </p>
                     <a class="nav-link text-light bg-info text-center">
-                        <button id="button02" class="btn btn-outline-info text-light bg-info text-center" type="button"> <i class="fa-solid fa-mountain fa-2x"></i></button>
+                        <button id="button02" class="btn btn-outline-info text-light bg-info text-center" type="button">
+                            <i class="fa-solid fa-mountain fa-2x"></i></button>
                     </a>
                 </div>
                 <div class="col-12 col-md-4">
                     <a class="nav-link text-light bg-info text-center">
-                        <button id="button03" class="btn btn-outline-info text-light bg-info text-center" type="button"> <i class="fa-solid fa-route fa-2x"></i></button>
+                        <button id="button03" class="btn btn-outline-info text-light bg-info text-center" type="button">
+                            <i class="fa-solid fa-route fa-2x"></i></button>
                     </a>
-                    <p id="seccion03">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, necessitatibus! Odit iusto
+                    <p id="seccion03">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+                        necessitatibus! Odit iusto
                         neque qui asperiores incidunt tempora accusamus alias, vitae ullam recusandae similique facilis
                         culpa nostrum assumenda architecto eum molestias error, dolor doloremque atque veniam? Excepturi
                         ab suscipit similique magnam ad porro eaque natus unde facere earum, amet asperiores aperiam et
@@ -138,13 +144,13 @@
         </section>
         <!--fin QUIENES SOMOS-->
         <!--inicio DESTACADOS-->
-        <section class="container-fluid bg-black py-4 px-5 mx-auto text-light fs-6 fw-light">
-            <div class="row mx-2">
+        <section class="container-fluid bg-black text-light fs-6 fw-light">
+            <div class="row justify-content-center mx-4">
                 <h3 class="text-center fw-light text-light py-2">DESTACADOS</h3>
                 <hr class="border border-light border-1 opacity-25">
-                <div class="col-12 col-md-3 ">
-                    <div class="card bg-info text-light" style="width: 17rem;">
-                        <img class="img-fluid" src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                <div class="col-12 col-md-3 py-3">
+                    <div class="card h-100 bg-info text-light " style="width: 16rem;">
+                        <div class="card1 mis-cards"></div>
                         <div class="card-body">
                             <p class="card-title">Lorem ipsum dolor sit amet.</p>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
@@ -153,9 +159,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <div class="card bg-info text-light" style="width: 17rem;">
-                        <img class="img-fluid" src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                <div class="col-12 col-md-3 py-3">
+                    <div class="card h-100 bg-info text-light" style="width: 16rem;">
+                        <div class="card2 mis-cards"></div>
                         <div class="card-body">
                             <p class="card-title">Lorem ipsum dolor sit amet.</p>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
@@ -163,9 +169,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <div class="card bg-info text-light" style="width: 17rem;">
-                        <img class="img-fluid" src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                <div class="col-12 col-md-3 py-3">
+                    <div class="card h-100 bg-info text-light" style="width: 16rem;">
+                        <div class="card3 mis-cards"></div>
                         <div class="card-body">
                             <p class="card-title">Lorem ipsum dolor sit amet.</p>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
@@ -173,9 +179,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <div class="card bg-info text-light" style="width: 17rem;">
-                        <img class="img-fluid" src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                <div class="col-12 col-md-3 py-3">
+                    <div class="card h-100 bg-info text-light" style="width: 16rem;">
+                        <div class="card4 mis-cards"></div>
                         <div class="card-body">
                             <p class="card-title">Lorem ipsum dolor sit amet.</p>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed
