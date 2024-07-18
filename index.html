@@ -28,42 +28,41 @@
 </head>
 
 <body class="font">
-    <!--inicio nav-->
-    <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme="dark">
-        <div class="container">
-            <a class="navbar-brand text-dark d-flex " href="index.html">
-                <img class="logo" src="assets/img/viajes.svg" alt="logo">
-                <h3 class="my-2 text-light fw-light">Viajes Chile</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fs-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#quienessomos">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#destacados">Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
+    <header>
+        <!--el nav esta junto con el carrousel en el header-->
+        <!--inicio nav-->
+        <nav class="navbar navbar-expand-lg bg-transparent sticky-top" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand text-dark d-flex " href="index.html">
+                    <img class="logo" src="assets/img/viajes.svg" alt="logo">
+                    <h3 class="my-2 text-light">Viajes Chile</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#quienessomos">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#destacados">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!--fin nav-->
-
-    <!--inicio carrousel-->
-    <section class="container-fluid">
-        <header>
-            <div id="carouselfondo" class="carousel slide" data-bs-ride="carousel">
-                <!-- bata-bs-ride hace que el carrousel sea automatico-->
+        </nav>
+        <!--fin nav-->
+        <!--inicio carrousel-->
+        <div class="position-relative">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="llamas">
@@ -86,10 +85,9 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </header>
-
-    </section>
-    <!--fin carrousel-->
+        </div>
+        <!--fin carrousel-->
+    </header>
     <!--inicio main-->
     <main>
         <!--inicio QUIENES SOMOS-->

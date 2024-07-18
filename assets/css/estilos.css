@@ -36,3 +36,13 @@
     border-radius: 2%;
     border-color: transparent;
 }
+.navbar {  
+    position: fixed; /* posición del navbar */
+    width: 100%;
+    z-index: 1000;
+}
+
+.carousel-item img {
+    height: 100%; /* Ajusta la altura de la imagen al alto de la ventana */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
+}
