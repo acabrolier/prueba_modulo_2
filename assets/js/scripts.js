@@ -1,10 +1,12 @@
-$('#button01').on('click', function () {
-    $('#seccion01').slideToggle(1000);
-})
-$('#button02').on('click', function () {
-    $('#seccion02').slideToggle(1000);
-})
-$('#button03').on('click', function () {
-    $('#seccion03').slideToggle(1000);
-})
 
+
+$(document).ready(function() {
+    $('#enviar').click(function() {
+        Swal.fire({
+            icon: 'success',
+            title: '¡Mensaje enviado!',
+            text: 'A la brevedad nos pondremos en contacto contigo.',
+            confirmButtonText: 'Aceptar'
+        });
+    });
+});
